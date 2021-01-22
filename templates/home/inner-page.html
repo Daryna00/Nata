@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Maxim Bootstrap Template</title>
+  <title>Natalia Kibenko</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/static/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Maxim - v2.3.0
@@ -42,42 +43,24 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html">Maxim</a></h1>
+        <h1 class="text-light"><a href="/page">Детский психолог</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li class="active"><a href="/">Начало</a></li>
+          <li class="active"><a href="/page">Обо мне</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
+
+<body>
+
 
   <main id="main">
 
@@ -86,10 +69,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Обо мне</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li><a href="/">Home</a></li>
+            <li>Обо мне</li>
           </ol>
         </div>
 
@@ -97,10 +80,32 @@
     </section><!-- End Breadcrumbs Section -->
 
     <section class="inner-page">
+      <div class="row">
+          <div class="col-xl-4 col-lg-7" data-aos="fade-right">
+            <img src="static/img/1829541.jpg"  class="img-fluid" alt="">
+          </div>
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+
+        <h1>Детский психолог Наталья Кибенко</h1>
+        <p>Меня зовут Наталия.</p>
+        <p>Я медицинский психолог, окончила НМУ имени А. А. Богомольца. Иными словами, у меня медицинское и психологическое образование.</p>
+
+
+        <p>Два года назад закончила специализацию «Работа с феноменами тела и симптомом в гештальт-подходе». С тех пор работаю с психосоматическими проблемами у детей. Кроме этого продолжаю обучатся в гештальт направлении. Последний год работаю с особенными детьми, провожу диагностику, обучение и коррекцию их поведения, используя АВА-подход, арт- и песочную терапию.</p>
+        <p>С детьми работаю уже 4 года, от трёх до 18 лет.</p>
+        <p>Консультирую с такими запросами как:</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result"> Диагностика состояния ребёнка, готовность к школе.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Проблемы в отношениях родитель- ребёнок, ребенок-школа.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Психосоматические заболевания у детей.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Страхи у детей.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Агрессия и аутоагрессия у ребёнка.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Самооценка.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Диагностика и коррекция поведения у особенных детей.</p>
+        <p style="margin-left: 40px"><img  src="{% static 'img/penrose-square.png' %}" alt="img_result">Помощь и диагностика при выборе профильного образования.</p>
+         <P> Провожу тренинги по «Эмоциональному интеллекту для детей». Проходила практику в НДСЛ
+          "Охмадет".</p>
+         <h2>Буду рада знакомству с вами !</h2>
+
       </div>
     </section>
 
@@ -114,87 +119,47 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Maxim</h3>
+              <h3>Наталия Кибенко</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                ул. Владимирская 11 <br>
+                2 этаж, офис 4<br><br>
+                <strong>Viber:</strong> +38 073 175 39 52<br>
+                <strong>Email:</strong>Natashakibenko@ukr.net<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/Natali.childpsy/?ref=page_internal" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/tatakibenko_child.psy?igshid=15l8eoxfmfs27" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://join.skype.com/invite/jisIJThpMs5z" class="google-plus"><i class="bx bxl-skype"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Меню</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Начало</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/page">Обо мне</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Maxim</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
+    </footer>
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src=static/vendor/venobox/venobox.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="static/js/main.js"></script>
 </body>
 
 </html>
